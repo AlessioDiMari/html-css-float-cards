@@ -2,7 +2,37 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
+    border: 1px solid red;
 }
 body{
     font-family: 'Nunito', sans-serif;
+    background-color: white;
+}
+
+
+h1{
+    text-align: center;
+    padding: 45px;
+    font-weight: 1000;
+    color: #E53170;
+}
+
+main{
+    padding: 20px 20% 0px;
+}
+
+.clearfix::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.float-cards .card{
+    float: left;
+    display: inline-block;
+    height: 100px;
+    width: calc(100% / 3);
+    background-color: rgba(255, 0, 0, 0.225);
+    padding: 10px;
 }
